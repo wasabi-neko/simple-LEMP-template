@@ -1,0 +1,10 @@
+.vscode
+.DS_Store
+**/.DS_Store
+
+mysql/data
+mysql/*.env
+!mysql/example.env
+
+nginx/log/*
+nginx/www/*
