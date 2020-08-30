@@ -9,6 +9,7 @@ services:
     volumes:
       - $PWD/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - $PWD/nginx/www:/usr/share/nginx
+      - $PWD/nginx/log:/var/log/nginx/
 
   php:
     build: ./php
@@ -26,6 +27,6 @@ services:
     ports:
       - "3306:3306"
     env_file:
-      - $PWD/mysql/example.env  # change the file to yours
+      - ./mysql/example.env  # change the file to yours
     volumes:
-      - $PWD/mysql/my-data:/var/lib/mysql
+      - $PWD/mysql/data:/var/lib/mysql

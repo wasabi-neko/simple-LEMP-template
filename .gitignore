@@ -7,4 +7,3 @@ mysql/*.env
 !mysql/example.env
 
 nginx/log/*
-nginx/www/*
